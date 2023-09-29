@@ -68,37 +68,64 @@
 //         cout<<"will take number"<<endl;
 //     }
 // }
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// int main(){
+//     int size;
+//     cin>>size;
+//     int arr[size][size];
+//     // get input 
+//     for(int i=0;i<size;i++){
+//         for(int j=0;j<size;j++)
+//         {
+//             cin>>arr[i][j];
+//         }
+//     }
+//  int sum1=0;
+//   int sum2=0;   
+
+//    for(int i=0;i<size;i++){
+//         for(int j=0;j<size;j++)
+//         {
+//             // main diagonal
+//              if (i == j){
+//               sum1+=arr[i][j];
+//              }
+//               // Condition for secondary diagonal
+//             if ((i + j) == (size - 1)){
+//              sum2+=arr[i][j]; 
+//             }
+//         }
+//     }
+// //cout<<abs(sum1) + abs(sum2)<<endl;
+// 	cout<<abs(sum1 - sum2)<<endl;
+
+// }
 #include<bits/stdc++.h>
 using namespace std;
 
-int main(){
-    int size;
-    cin>>size;
-    int arr[size][size];
-    // get input 
-    for(int i=0;i<size;i++){
-        for(int j=0;j<size;j++)
-        {
-            cin>>arr[i][j];
-        }
+int main() {
+      int sizeA, sizeB;
+    cin >> sizeA >> sizeB;
+    int arr1[sizeA];
+    int arr2[sizeB];
+    for(int i=0;i<sizeA;i++){
+        cin>>arr1[i];
     }
- int sum1=0;
-  int sum2=0;   
-
-   for(int i=0;i<size;i++){
-        for(int j=0;j<size;j++)
-        {
-            // main diagonal
-             if (i == j){
-              sum1+=arr[i][j];
-             }
-              // Condition for secondary diagonal
-            if ((i + j) == (size - 1)){
-             sum2+=arr[i][j]; 
-            }
-        }
+     for(int i=0;i<sizeB;i++){
+        cin>>arr2[i];
     }
-//cout<<abs(sum1) + abs(sum2)<<endl;
-	cout<<abs(sum1 - sum2)<<endl;
-
+      int i = 0, j = 0;
+    while (i < sizeA && j < sizeB) {
+        if (arr1[i] == arr2[j]) {
+            j++;
+        }
+        i++;
+    }
+     if (j == sizeB) {
+        cout << "YES" << endl;
+    } else {
+        cout << "NO" << endl;
+    }
 }
