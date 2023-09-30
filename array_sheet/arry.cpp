@@ -102,30 +102,28 @@
 // 	cout<<abs(sum1 - sum2)<<endl;
 
 // }
-#include<bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int main() {
-      int sizeA, sizeB;
-    cin >> sizeA >> sizeB;
-    int arr1[sizeA];
-    int arr2[sizeB];
-    for(int i=0;i<sizeA;i++){
-        cin>>arr1[i];
+    int size, num_elements;
+    cin >> size >> num_elements;
+
+    int input[size];
+    int frequency[num_elements + 1] = {0}; // Initialize frequency array with 0
+
+    // Reading input elements
+    for (int i = 0; i < size; ++i) {
+        cin >> input[i];
+        // Increment frequency for the corresponding element
+        frequency[input[i]]++;
     }
-     for(int i=0;i<sizeB;i++){
-        cin>>arr2[i];
+
+    // Print the frequency array
+    for (int i = 1; i <= num_elements; ++i) {
+        cout << frequency[i] << endl;
     }
-      int i = 0, j = 0;
-    while (i < sizeA && j < sizeB) {
-        if (arr1[i] == arr2[j]) {
-            j++;
-        }
-        i++;
-    }
-     if (j == sizeB) {
-        cout << "YES" << endl;
-    } else {
-        cout << "NO" << endl;
-    }
+    cout << endl;
+
+    return 0;
 }
