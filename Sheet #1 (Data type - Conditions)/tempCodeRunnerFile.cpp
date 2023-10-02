@@ -1,12 +1,16 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    string namePerson1,namePerson2,nameDad1,nameDad2;
-	cin>>namePerson1>>nameDad1>>namePerson2>>nameDad2;
-    if(nameDad1==nameDad2){
-        cout<<"ARE Brothers"<<endl;
-    }else{
-         cout<<"NOT"<<endl; 
-    }
-
+//      years = tot/365;
+//    months = (tot%365)/30;
+//    weeks = ((tot%365)%30)/7;
+//    days = ((tot%365)%30)%7;
+    long long tot,year,month,days;
+    cin>>tot;
+    year=tot/365;
+    month=(tot%365)/30;
+    days = ((tot%365)%30)%7;
+    cout<<year<<" " <<"years"<<endl;
+    cout<<month <<" "<<"months"<<endl;
+    cout<<days<<" " <<"days"<<endl;
 }
