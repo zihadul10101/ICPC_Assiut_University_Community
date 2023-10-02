@@ -1,16 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-//      years = tot/365;
-//    months = (tot%365)/30;
-//    weeks = ((tot%365)%30)/7;
-//    days = ((tot%365)%30)%7;
-    long long tot,year,month,days;
-    cin>>tot;
-    year=tot/365;
-    month=(tot%365)/30;
-    days = ((tot%365)%30)%7;
-    cout<<year<<" " <<"years"<<endl;
-    cout<<month <<" "<<"months"<<endl;
-    cout<<days<<" " <<"days"<<endl;
+    long long l1,r1,l2,r2;
+    cin>>l1>>r1>>l2>>r2;
+    if(r1>=l2&&r2>=l1){
+        cout<<l2<<" "<<r1<<endl;
+    }
+    else if(r1<=l2&&r2<=l1){
+      cout<<l1<<" "<<r2<<endl;
+    }
+    else{
+      cout<<"-1"<<endl;  
+    }
 }
