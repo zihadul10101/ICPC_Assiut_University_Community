@@ -7,8 +7,9 @@ int main() {
 	int askChar = letter; // 97
     if(askChar==122){
         cout<<"a"<<endl;
+        return 0;
     }
-    ++letter;
+    letter++;
     cout<<letter<<endl;
 
 }
