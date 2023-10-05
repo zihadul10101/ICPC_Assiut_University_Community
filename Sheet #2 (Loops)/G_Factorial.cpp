@@ -17,3 +17,25 @@ int counter; // 2
 		fac = 1;
 	}
 }
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// int main()
+// {
+//     int test_cases;
+//     cin >> test_cases;
+
+//     for (int t = 0; t < test_cases; t++) {
+//         int num;
+//         cin >> num;
+//         long long fac = 1;
+
+//         for (int i = 1; i <= num; i++) {
+//             fac *= i;
+//         }
+
+//         cout << fac << endl;
+//     }
+
+//     return 0;
+// }
