@@ -16,3 +16,15 @@ int main()
     }
   
 }
+
+// 2
+// 123
+// Input Number: 123
+// Size of Number: 3
+// Reverse Order:
+// 3 2 1 
+// 456
+// Input Number: 456
+// Size of Number: 3
+// Reverse Order:
+// 6 5 4 
