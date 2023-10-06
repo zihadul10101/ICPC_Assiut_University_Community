@@ -25,6 +25,16 @@ int main()
 	}
 }
 
+
+// | Counter | num1 | num2 | min | max | Sum |
+// |---------|------|------|-----|-----|-----|
+// | 3       | -    | -    | -   | -   | -   |
+// | 3       | 5    | 6    | 5   | 6   | 0   |
+// | 2       | 10   | 4    | 4   | 10  | 21  |
+// | 1       | 4    | 9    | 4   | 9   | 12  |
+// | 0       | -    | -    | -   | -   | -   |
+
+
 //Test
 //Case	(num1, num2)	min	max	Odd Numbers Between min and max (Excluding num1 and num2)	Sum of Odd Numbers
 // 1	5 6	            5	 6	-	                 0
