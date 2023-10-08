@@ -1,1 +1,1 @@
-  // cout<<reversed<<endl;
+n - 
