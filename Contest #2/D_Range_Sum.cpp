@@ -37,6 +37,9 @@ int main() {
 
        long long minVal = min(L, R);
         long long maxVal = max(L, R);
+   // n*(n+1)/2
+   // 3 6
+   //(3+6)*(6-3+1)=9*4=36/2=18
 
         long long sum = (minVal + maxVal) * (maxVal - minVal + 1) / 2;
         cout << sum << endl;
