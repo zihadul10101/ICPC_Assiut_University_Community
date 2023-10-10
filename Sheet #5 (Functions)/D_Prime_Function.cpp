@@ -1,16 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std ;
 bool isPrime (int num){
+  int newNumber = sqrt(num);
     if(num<=1){
       return 0;
     }
-      for(int i=2;i<num;i++){
+      for(int i=2;i<=newNumber;i++){
         if(num%i==0){
           return 0;
         }
-       return 1;
+    
     }
- 
+    return 1;
 }
 int main()
 {
