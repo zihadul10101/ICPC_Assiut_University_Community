@@ -1,15 +1,14 @@
-#include <bits/stdc++.h>
-using namespace std ;
-int main()
-{
-	long long seet;
-	cin>>seet;
-	long long row = seet /4;  // 5 / 4 = 1
-	long long column;
-	if(row % 2 == 0){ // 0 / 2 = 0   5/2=2.5
-		column = seet %4; // 2 % 4 = 2
-	} else {
-		column = 3-(seet%4); // 3 - 1 = 2
+for(int i=0;i<counter;i++){ //  i = 0
+		for(int z=0;z<counter;z++){ // z = 0
+			if(i == z && i != counter/2 && z != counter/2){
+				cout<<"\\";
+			} else if (i == counter/2 && z == counter/2){
+				cout<<"X";
+			} else if(z != counter/2 && i == ((counter-1)-z)){
+				cout<<"/";
+			} else {
+				cout<<"*";
+			}
+		}
+		cout<<endl;
 	}
-	cout<<row<<" "<<column<<endl;
-}

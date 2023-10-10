@@ -4,20 +4,38 @@ int main()
 {
 	int counter; // 5
 	cin>>counter;
-	for(int i=0;i<counter;i++){ //  i = 0
-		for(int z=0;z<counter;z++){ // z = 0
-			if(i == z && i != counter/2 && z != counter/2){
+	// for(int i=0;i<counter;i++){ //  i = 0
+	// 	for(int z=0;z<counter;z++){ // z = 0
+	// 		if(i == z && i != counter/2 && z != counter/2){
+	// 			cout<<"\\";
+	// 		} else if (i == counter/2 && z == counter/2){
+	// 			cout<<"X";
+	// 		} else if(z != counter/2 && i == ((counter-1)-z)){
+	// 			cout<<"/";
+	// 		} else {
+	// 			cout<<"*";
+	// 		}
+	// 	}
+	// 	cout<<endl;
+	// }
+	for(int i=0;i<counter;i++){
+		for(int j=0;j<counter;j++){
+		
+			if(i==j && i!=counter/2 && j!= counter/2){
 				cout<<"\\";
-			} else if (i == counter/2 && z == counter/2){
+			}else if(i==counter/2 && j== counter/2){
 				cout<<"X";
-			} else if(z != counter/2 && i == ((counter-1)-z)){
+			}
+			else if(j!= counter/2 && i==((counter-1)-j)){
 				cout<<"/";
-			} else {
+			}
+			else{
 				cout<<"*";
 			}
 		}
 		cout<<endl;
 	}
+		
 }
 
 // \***/
