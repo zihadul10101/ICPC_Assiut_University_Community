@@ -31,3 +31,4 @@ int main()
 	subArray(arr, n);
 	return 0;
 }
+
