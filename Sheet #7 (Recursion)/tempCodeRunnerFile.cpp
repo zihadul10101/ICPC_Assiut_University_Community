@@ -1,1 +1,2 @@
-num % 2
+ // Debug information
+    // cout << "Step " << flag << ": num=" << num <<  endl;

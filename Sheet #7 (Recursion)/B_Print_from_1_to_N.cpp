@@ -2,9 +2,13 @@
 using namespace std;
 int flag=1;
 void printNum(int num){ // num = 0
+  // Debug information
+    cout << "Current Num: " << num << ", Flag: " << flag << endl;
 	if(num == 0){
 		return;
 	}
+	 // Debug information
+    // cout << "Step " << flag << ": num=" << num <<  endl;
      // 1 2 3 4 5
           cout<< flag++ <<endl;
 	     return printNum(num-1);
