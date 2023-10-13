@@ -3,6 +3,10 @@ using namespace std;
 
 void printDecToBinary(int num) {
     //29
+     // Add debug information to show table
+    // static int step = 0; // Counter for steps
+    // cout << "Step " << step++ << ": num=" << num << ", num/2=" << num / 2 << ", num%2=" << num % 2 << endl;
+
        if(num==0){
         return;
        }
@@ -17,7 +21,7 @@ void printDecToBinary(int num) {
       //3%2==1,
       //1%2==1
       // 1 0 1 1 1
-      //1 1 1  1
+      //1 1 1 0 1
   
 }
 int main() {
