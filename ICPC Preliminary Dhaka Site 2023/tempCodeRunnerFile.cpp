@@ -1,0 +1,1 @@
+ cout<<overs<<" "<<"overs"<<" "<<run<<" "<<"Run"<<" "<<wicket<<" "<<"Wicket"<<"."<<endl;
