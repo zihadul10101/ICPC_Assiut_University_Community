@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
 
-void printAsterisks(int n, int totalRows, int spaces) {
+void printSSStar(int n, int totalRows, int spaces) {
     if (n <= 0) {
         return;
     }
-   printAsterisks(n - 1, totalRows, spaces + 1);
+   printSSStar(n - 1, totalRows, spaces + 1);
     // Debug output: Print spaces
     for (int i = 0; i < spaces; i++) {
         cout << " ";
@@ -28,7 +28,7 @@ int main() {
     cin >> rows;
 
     //cout << "Debug Output:" << endl;
-    printAsterisks(rows, rows, 0);
+    printSSStar(rows, rows, 0);
 
     return 0;
 }
