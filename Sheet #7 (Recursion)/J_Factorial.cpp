@@ -1,14 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
-double fact(int num){ // num = 0
-	if(num == 1){
+long long fact(int num){ // num = 0
+	if(num <= 1){
 		return num;
 	}
 	
 	return num*fact(num-1);
 }
 int main() {
-    int num;
+    long long num;
 	cin>>num;
 	cout<<fact(num);
 }
