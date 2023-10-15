@@ -4,7 +4,7 @@ using namespace std;
 int maxNumber(int arr[],int n)// arr(1 -3 5 4 -6), 5
 {
  if (n == 1) return arr[0]; 
-
+// we know that max(arr,arr+n)
     return max(arr[n-1], maxNumber(arr, n-1)); 
 
  
