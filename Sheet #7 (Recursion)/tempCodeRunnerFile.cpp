@@ -1,1 +1,1 @@
-arr[--size
+int size;
