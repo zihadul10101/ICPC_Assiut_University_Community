@@ -9,8 +9,10 @@ int main(){
     }
     
     else{
-        int digit=num%10;
-        if(digit==0){
+        int fdigit=num%10;
+        int sdigit=num%100;
+
+        if(fdigit){
            cout<<"0"<<endl; 
         }else{
             num/=10;
