@@ -12,7 +12,7 @@
 //        cin>>ch;
 //       chLength = ch.length();
 //       char first,last;
-//      if(chLength<10){
+//      if(chLength<=10){
 //         cout<<ch<<endl;
 //      }else{
       
