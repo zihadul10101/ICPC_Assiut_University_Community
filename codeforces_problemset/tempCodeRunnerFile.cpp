@@ -1,1 +1,1 @@
- // cout<<len<<endl;
+#define ll    long long
