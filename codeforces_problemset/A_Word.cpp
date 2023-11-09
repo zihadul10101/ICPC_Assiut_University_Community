@@ -16,12 +16,17 @@ int main() {
         else
             special++;
     }
-    if(upper>lower){
-        str=toupper(str);
-        cout<<str<<endl;
+    if(upper<lower || upper==lower){
+      for (int i = 0; i < str.length(); i++) {
+            str[i] = tolower(str[i]); // Corrected to use tolower
+        }
+        cout << str << endl;
     }else{
-        str=tolower(str);
-         cout<<str<<endl;
+          for (int i = 0; i < str.length(); i++) {
+            str[i] = toupper(str[i]);
+        }
+        cout << str << endl;
+      
     }
     // cout << "Upper case letters: " << upper << endl;
     // cout << "Lower case letters : " << lower << endl;
