@@ -1,37 +1,34 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-  string str;
-  cin>>str;
-   int upper = 0, lower = 0, number = 0, special = 0;
-    for (int i = 0; i < str.length(); i++)
-    {
-        if (str[i] >= 'A' && str[i] <= 'Z')
-            upper++;
-        else if (str[i] >= 'a' && str[i] <= 'z')
-            lower++;
-        // else if (str[i]>= '0' && str[i]<= '9')
-        //     number++;
-        else
-            special++;
+int main()
+{
+    string s;
+    cin>>s;
+    int ans=0;
+    int le=s.length();
+    for(int i=0;i<le;i++){
+        int cout=0;
+        if(s[i]=="0"){
+           while(s[i]=="0" && i<le){
+               cout++;
+               i++;
+           }
+        }else{
+           if(s[i]=="1"){
+           while(s[i]=="1" && i<le){
+               cout++;
+               i++;
+           }  
+        }
+        if(count>=7){
+            ans=1;
+        }
     }
-    if(upper>lower){
-        str=toupper(str);
-        cout<<str<<endl;
-    }else{
-        str=tolower(str);
-         cout<<str<<endl;
-    }
-    // cout << "Upper case letters: " << upper << endl;
-    // cout << "Lower case letters : " << lower << endl;
-    // cout << "Number : " << number << endl;
-    // cout << "Special characters : " << special << endl;
-// if(str[i] >= 65 and str[i] <=90), then it is uppercase letter, 
- 
-// if(str[i] >= 97 and str[i] <=122), then it is lowercase letter, 
- 
-// if(str[i] >= 48 and str[i] <=57), then it is number, 
- 
-// else it is a special character
+  if(ans==1){
+    cout<<"YES"<<endl;
+  }else{
+     cout<<"NO"<<endl;
+  }
+    return 0;
 }
