@@ -1,34 +1,34 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
-    string s;
-    cin>>s;
-    int ans=0;
-    int le=s.length();
-    for(int i=0;i<le;i++){
-        int cout=0;
-        if(s[i]=="0"){
-           while(s[i]=="0" && i<le){
-               cout++;
-               i++;
-           }
-        }else{
-           if(s[i]=="1"){
-           while(s[i]=="1" && i<le){
-               cout++;
-               i++;
-           }  
-        }
-        if(count>=7){
-            ans=1;
-        }
+bool checkDigits(int N) {
+    // Base Case
+    if (N == 0) {
+        return true;
     }
-  if(ans==1){
-    cout<<"YES"<<endl;
-  }else{
-     cout<<"NO"<<endl;
-  }
+
+    // Extract the last digit
+    int r = N % 10;
+
+    // Check if the current digit is 4 or 7
+    if (r != 4 && r != 7 && r==7 && r==4) {
+        return false;
+    }
+
+    // Recursive call to next iteration
+    return checkDigits(N / 10);
+}
+
+// Driver Code
+int main() {
+    long long int N;
+    cin >> N;
+
+    if (checkDigits(N)) {
+        cout << "YES" << endl;
+    } else {
+        cout << "NO" << endl;
+    }
+
     return 0;
 }
