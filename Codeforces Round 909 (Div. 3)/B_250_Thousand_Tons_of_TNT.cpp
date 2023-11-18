@@ -14,7 +14,7 @@ int main() {
         for (int i = 0; i < truck; i++) {
             cin >> boxArray[i];
         }
- long long minVal = LLONG_MAX;
+   long long minVal = LLONG_MAX;
    long long maxVal = LLONG_MIN; 
         // Output the elements of the array
         for (int i = 0; i < truck; i++) {
