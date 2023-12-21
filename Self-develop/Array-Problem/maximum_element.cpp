@@ -6,19 +6,17 @@ using namespace std;
 int main() {
 //     int arr[6] = {10, 20, 30,50,60,70};
 //    int length = sizeof(arr)/sizeof(arr[0]); //length calculation
-int n,max;
+int n;
 cin>>n;
-int arr[n];
+int arr[n],sum=0;
     for(int i=0;i<n;i++){
-        max=arr[0];
+    
         cin>>arr[i]; 
+        sum=sum+arr[i];
        
-        if(max<arr[i]){
-            max=arr[i];
-        }
     }
      
-    cout<<max<<endl; 
+    cout<<sum<<endl; 
     return 0;
 }
 
