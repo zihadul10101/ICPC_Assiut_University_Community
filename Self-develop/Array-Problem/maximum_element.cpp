@@ -4,19 +4,19 @@
 using namespace std;
 
 int main() {
-//     int arr[6] = {10, 20, 30,50,60,70};
-//    int length = sizeof(arr)/sizeof(arr[0]); //length calculation
+
 int n;
 cin>>n;
-int arr[n],sum=0;
+int arr[n];
     for(int i=0;i<n;i++){
-    
-        cin>>arr[i]; 
-        sum=sum+arr[i];
-       
+        cin>>arr[i];   
     }
+     for(int i=(n-1); i>=0; i--){
+           cout<<arr[i]<<" ";
+     }
+  
      
-    cout<<sum<<endl; 
+   
     return 0;
 }
 
