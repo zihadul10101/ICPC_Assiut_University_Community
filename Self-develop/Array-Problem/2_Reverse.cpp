@@ -1,4 +1,4 @@
-// // min,max,sum of elements,Reverse
+// Reverse
 
 // #include <bits/stdc++.h>
 // using namespace std;
@@ -19,11 +19,12 @@
 
 
 #include <bits/stdc++.h>
-//#include <algorithm> // for std::reverse
+using namespace std;
+
 int main() {
     const int size = 5;
     int myArray[size] = {1, 2, 3, 4, 5};
-    // std::reverse(myArray, myArray + size);
+    // reverse(myArray, myArray + size);
     // Manual reversal
     for (int i = 0; i < size / 2; ++i) {
         // Swap elements from the beginning and end of the array
@@ -33,11 +34,23 @@ int main() {
     }
 
     // Print reversed array
+
     for (int i = 0; i < size; ++i) {
-     std::cout << myArray[i] << " ";
-     //cout << myArray[i] << " ";
+     cout << myArray[i] << " ";
+     
     }
 
     return 0;
 }
 
+// Iteration    myArray
+// Initial      1 2 3 4 5 
+// Iteration 1  5 2 3 4 1 
+// Iteration 2  5 4 3 2 1 
+
+
+// | Iteration | Original Array | Temp | After Swap   |
+// |-----------|-----------------|------|--------------|
+// | 1         | 1 2 3 4 5       | 1    | 5 2 3 4 1    |
+// | 2         | 5 2 3 4 1       | 2    | 5 4 3 2 1    |
+// | 3         | 5 4 3 2 1       | 3    | 5 4 3 2 1    |
