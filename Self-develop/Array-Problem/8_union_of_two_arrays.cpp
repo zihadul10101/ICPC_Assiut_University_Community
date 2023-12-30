@@ -1,6 +1,6 @@
 // input
-// const int size1 = 5;
-// const int size2 = 4;
+//  int size1 = 5;
+//  int size2 = 4;
 
 // int array1[size1] = {1, 2, 3, 4, 5};
 // int array2[size2] = {3, 4, 5, 6};
@@ -8,8 +8,8 @@
 // output 
 // Union of the arrays: 1 2 3 4 5 6
 
-// const int size1 = 6;
-// const int size2 = 3;
+//  int size1 = 6;
+//  int size2 = 3;
 
 // int array1[size1] = {2, 4, 6, 8, 10, 12};
 // int array2[size2] = {3, 6, 9};
@@ -21,13 +21,13 @@
 using namespace std;
 
 int main() {
-       const int size1 = 5;
-       const int size2 = 4;
+        int size1 = 5;
+        int size2 = 4;
 
-    int array1[size1] = {1,5,3,4,2};
+    int array1[size1] = {1,2,3,4,5};
     int array2[size2] = {3, 4, 5, 6};
      // Assuming the maximum size of the union is the sum of the sizes of both arrays
-    const int maxSize = size1 + size2;
+     int maxSize = size1 + size2;
     int unionArray[maxSize];
     int unionSize = 0;
     // sort(array1,array1+size1);
