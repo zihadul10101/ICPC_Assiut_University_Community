@@ -2,17 +2,19 @@
 using namespace std;
 
 int main() {
-    
-    long long int arr[4],count=0;
-     for(int i=0;i<4;i++){
-        cin>>arr[i];
-     }
-     for(int i=0;i<4;i++){
-       if(arr[i]==arr[i+1]){
-        count++;
-       }
-     }
- cout<<count<<endl;
+   string p;
+   cin>>p;
+   int flag=0;
+   for(int i=0;i<p.length();i++){
+    if((p[0] == 'H' || p[0] == 'Q' || p[0]=='9') || (p[i]=='H' || p[i] == 'Q' ||  p[i]=='9' || p[i]=='+' )){
+      flag++;
+    }
+   }
+   if(flag>0){
+     cout << "YES" << endl; 
+   }else{
+       cout<<"NO"<<endl;
+    }
+
     return 0;
 }
-
