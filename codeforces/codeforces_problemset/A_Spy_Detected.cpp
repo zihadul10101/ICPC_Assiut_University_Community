@@ -1,73 +1,69 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define yes "YES"
-#define no "NO"
 
-void solve(int n){
+void solve(int n) {
     int arr[n];
-    for(int i=0; i<n; i++){
-        cin >> arr[i];
+    int count=0;
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];  
     }
-    int s=0,d=0,left=0,right=n-1;
-    int taken=n;
-    int turn=0;
-    while(taken!=0){
-     if(turn%2==0){
-        // Sereja score
-        if(arr[left]>arr[right]){
-            s+=arr[left];
-            left++;
-        }else{
-           s+=arr[right];
-            right--;  
+                            //11 13 11 11
+    // ij=1 4 4 4 4          1111 1313 1111 1111
+     //i= 11 44 44 44 44     1311 1313 1311 1311
+     //i= 41 44 44 44 44     1111    
+     //i= 41 44 44 44 44     11
+     //i= 41 44 44 44 44
+    // i= 41 44 44 44 44
+    for(int j = 0; j<n; j++)
+      {
+        int tmp = 0;
+        for(int k = 0; k<n; k++)
+        {
+          if(arr[j] == arr[k]) tmp++;
         }
-     }else{
-//Dima Score
-      if(arr[left]>arr[right]){
-            d+=arr[left];
-            left++;
-        }else{
-           d+=arr[right];
-            right--;  
-        }
-     }
-     taken--;
-     turn++;
+        if(tmp == 1){
+          cout << j+1 << endl;
+        } 
+      }
     }
-    cout<<s<<" "<<d<<endl;
-      
-}
+
+
 int main() {
-    int n;
-    cin >> n;
+    int t; // number of test cases
+    cin >> t;
+
+    while (t--) {
+        int n; // size of the array
+        cin >> n;
         solve(n);
+    }
     return 0;
 }
-
-
-// void solve(int n){
-//     int s[n/2], d[n/2];
-//     int arr[n];
-//     for(int i=0; i<n; i++){
-//         cin >> arr[i];
-//     }
-//     sort(arr, arr+n);
-//     int sIndex = 0, dIndex = 0;
-//     for(int i=0; i<n; i++){
-//         if (i % 2 == 0) {
-//             s[sIndex++] = arr[i];
-//         } 
-//         else {
-//             d[dIndex++] = arr[i];
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int t;
+//     cin>>t;
+//     while (t--){
+//         int n;
+//         cin>>n;
+//         int ar[n];
+//         for (int i = 0; i < n; ++i) {
+//             cin>>ar[i];
 //         }
-//     } 
-//     int Sereja=0,Dima=0; 
-//     for(int i=0; i<dIndex; i++){
-//         Dima+=d[i];  
+//         bool found = false;
+//         for (int i = 1; i <n-1 ; ++i) {
+//             if (ar[i]!=ar[i-1] && ar[i]!=ar[i+1]){
+//                 cout<<i+1<<"\n";
+//                 found = true;
+//             }
+//         }
+//         if (!found){
+//             if (ar[0]!=ar[1]){
+//                 cout<<1<<"\n";
+//             } else{
+//                 cout<<n<<"\n";
+//             }
+//         }
 //     }
-//     for(int i=0; i<sIndex; i++){
-//         Sereja+=s[i];
-//     }
-//          cout << Dima<<" "<< Sereja <<endl;
-      
 // }
