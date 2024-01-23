@@ -40,3 +40,5 @@ int main() {
     binary_Search(arr, n, s_data);
     return 0;
 }
+
+

@@ -13,6 +13,7 @@ void bubble_sort(int arr[], int n) {
             }
         }
         if (flag == 0) {
+            
             // If no swaps were made in the inner loop, the array is already sorted
             break;
         }
