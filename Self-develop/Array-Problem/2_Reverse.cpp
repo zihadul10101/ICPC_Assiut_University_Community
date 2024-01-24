@@ -18,30 +18,30 @@
 // }
 
 
-#include <bits/stdc++.h>
-using namespace std;
+// #include <bits/stdc++.h>
+// using namespace std;
 
-int main() {
-    const int size = 5;
-    int myArray[size] = {1, 2, 3, 4, 5};
-    // reverse(myArray, myArray + size);
-    // Manual reversal
-    for (int i = 0; i < size / 2; ++i) {
-        // Swap elements from the beginning and end of the array
-        int temp = myArray[i];
-        myArray[i] = myArray[size - i - 1];
-        myArray[size - i - 1] = temp;
-    }
+// int main() {
+//     const int size = 5;
+//     int myArray[size] = {1, 2, 3, 4, 5};
+//     // reverse(myArray, myArray + size);
+//     // Manual reversal
+//     for (int i = 0; i < size / 2; ++i) {
+//         // Swap elements from the beginning and end of the array
+//         int temp = myArray[i];
+//         myArray[i] = myArray[size - i - 1];
+//         myArray[size - i - 1] = temp;
+//     }
 
-    // Print reversed array
+//     // Print reversed array
 
-    for (int i = 0; i < size; ++i) {
-     cout << myArray[i] << " ";
+//     for (int i = 0; i < size; ++i) {
+//      cout << myArray[i] << " ";
      
-    }
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
 
 // Iteration    myArray
 // Initial      1 2 3 4 5 
@@ -54,3 +54,4 @@ int main() {
 // | 1         | 1 2 3 4 5       | 1    | 5 2 3 4 1    |
 // | 2         | 5 2 3 4 1       | 2    | 5 4 3 2 1    |
 // | 3         | 5 4 3 2 1       | 3    | 5 4 3 2 1    |
+

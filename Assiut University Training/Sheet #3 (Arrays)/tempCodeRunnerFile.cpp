@@ -1,1 +1,2 @@
-  smallest_pair(arr, n);
+  // cout<<min<<endl;
+        // cout<<max<<endl;
