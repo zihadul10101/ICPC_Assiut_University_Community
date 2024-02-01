@@ -1,2 +1,1 @@
-  // cout<<min<<endl;
-        // cout<<max<<endl;
+ "Number of non-decreasing subarrays: " 

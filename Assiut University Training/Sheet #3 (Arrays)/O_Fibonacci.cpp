@@ -1,27 +1,25 @@
-// #include<bits/stdc++.h>
-// using namespace std;
-// int main()
-// {
-// 	long long position; // 5
-// 	cin>>position;
-// 	long long  start = 0;
-// 	long long  sec = 1;
-// 	if(position == 1){
-// 		cout<<start<<endl;
-// 	}
-//      else if(position == 2){
-// 		cout<<sec<<endl;
-// 	} else {
-// 		for(int i=3;i<=position;i++){
-// 			long long  res = start + sec;
-// 			start = sec;
-// 			sec = res;
-// 		}
-// 		cout<<sec<<endl;
-// 	}
-	
-	
-// }
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	long long position; // 5
+	cin>>position;
+	long long  start = 0;
+	long long  sec = 1;
+	if(position == 1){
+		cout<<start<<endl;
+	}
+     else if(position == 2){
+		cout<<sec<<endl;
+	} else {
+		for(int i=3;i<=position;i++){
+			long long  res = start + sec; 
+			start = sec;  
+			sec = res; 
+		}
+		cout<<sec<<endl;
+	}
+}
 
 
 // find febo sec Recursive Approach
@@ -71,29 +69,29 @@
 
 
 // Here's a C++ program to calculate the golden ratio using the Fibonacci sequence:
-#include <iostream>
+// #include <iostream>
 
-int main() {
-    int n; // Number of terms in the Fibonacci sequence
-    std::cout << "Enter the number of terms in the Fibonacci sequence: ";
-    std::cin >> n;
+// int main() {
+//     int n; // Number of terms in the Fibonacci sequence
+//     std::cout << "Enter the number of terms in the Fibonacci sequence: ";
+//     std::cin >> n;
 
-    double prev = 0.0; // Initialize the first Fibonacci number
-    double current = 1.0; // Initialize the second Fibonacci number
+//     double prev = 0.0; // Initialize the first Fibonacci number
+//     double current = 1.0; // Initialize the second Fibonacci number
 
-    for (int i = 2; i <= n; i++) {
-        double next = prev + current;
-        prev = current;
-        current = next;
-    }
+//     for (int i = 2; i <= n; i++) {
+//         double next = prev + current;
+//         prev = current;
+//         current = next;
+//     }
 
-    // Calculate the golden ratio as the ratio of current and previous Fibonacci numbers
-    double goldenRatio = current / prev;
+//     // Calculate the golden ratio as the ratio of current and previous Fibonacci numbers
+//     double goldenRatio = current / prev;
 
-    std::cout << "Approximate Golden Ratio after " << n << " terms: " << goldenRatio << std::endl;
+//     std::cout << "Approximate Golden Ratio after " << n << " terms: " << goldenRatio << std::endl;
 
-    return 0;
-}
+//     return 0;
+// }
 
 // find Fibonacci Day in cpp
 
