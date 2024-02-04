@@ -8,6 +8,7 @@ void patternMatching(string text,string pattern) {
     for (int i = 0; i <= n - m; i++) { // 0<=10
         int j;
         for (j = 0; j < m; j++) {//0-5
+       // cout<<text[j]<<pattern[i]<<" ";
             if (text[i + j] != pattern[j]) {
                 break;
             }
@@ -15,11 +16,12 @@ void patternMatching(string text,string pattern) {
         if (j == m) {
             cout << "Pattern found at index " << i << endl;
         }
+        
     }
 }
 int main() {
-    string text = "ABABDABACDABABCABAB"; //19
-    string pattern = "ABABC";//5
+    string text = "ABABA"; //19
+    string pattern = "BA";//5
 // string text;
 // cout << "Type your text: ";
 // cin >> text; // get user input from the keyboard

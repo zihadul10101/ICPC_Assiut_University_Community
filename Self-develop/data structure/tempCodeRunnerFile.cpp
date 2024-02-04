@@ -1,2 +1,2 @@
-  cout<<"n"<<"="<<n<<endl;
-  cout<<"m"<<"="<<m<<endl;
+    char T[] = "abcaabaca";
+    char P[] = "aaba";
