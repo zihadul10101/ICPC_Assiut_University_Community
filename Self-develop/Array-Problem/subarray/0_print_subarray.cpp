@@ -16,19 +16,20 @@ void solve(){
 
         for (int j = i; j < n; ++j) {
             // Loop to calculate the maximum value in the current subarray
-            maxVal = max(maxVal, arr[j]);
+          //  maxVal = max(maxVal, arr[j]);
 
             // Print elements of current subarray
-            //cout << "[";
+            cout << "[";
             for (int k = i; k <= j; ++k) {
-                // cout << arr[k];
+                cout << arr[k];
 
-                // if (k < j) {
-                //     cout << ", ";
-                // }
+                if (k < j) {
+                    cout << ", ";
+                }
             }
-            //cout << "] - Max Value: " << maxVal << endl;
-            cout<< maxVal <<" ";
+            cout << "]";
+           // cout << "] - Max Value: " << maxVal << endl;
+          //  cout<< maxVal <<" ";
         }
       
     }

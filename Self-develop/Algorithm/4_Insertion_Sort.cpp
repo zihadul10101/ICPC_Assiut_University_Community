@@ -13,6 +13,7 @@ void insertion_sort(int arr[], int n) {
     }
 }
 
+
 int main() {
     int n;
     cin >> n;
@@ -23,6 +24,7 @@ int main() {
     }
 
     insertion_sort(arr, n);
+
 
     // Print the sorted array
     for (int i = 0; i < n; i++) {

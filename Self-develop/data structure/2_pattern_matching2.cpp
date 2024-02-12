@@ -16,7 +16,7 @@ int main() {
     state[0][0] = 1;
     state[0][1] = 0;
     state[0][2] = 0;
-//2nd row
+    //2nd row
     state[1][0] = 2;
     state[1][1] = 0;
     state[1][2] = 0;

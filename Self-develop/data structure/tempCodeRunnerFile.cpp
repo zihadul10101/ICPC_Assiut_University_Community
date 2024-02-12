@@ -1,2 +1,1 @@
-    char T[] = "abcaabaca";
-    char P[] = "aaba";
+ arr[k - 1] = item;
