@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
       int sizeA, sizeB;
-    cin >> sizeA >> sizeB;
+      cin >> sizeA >> sizeB;
     int arr1[sizeA];
     int arr2[sizeB];
     for(int i=0;i<sizeA;i++){
@@ -18,7 +18,10 @@ int main() {
             j++;
         }
         i++;
+    //        cout<<"j"<<"="<<j<<endl;
+    // cout<<"i"<<"="<<i<<endl;
     }
+ 
      if (j == sizeB) {
         cout << "YES" << endl;
     } else {

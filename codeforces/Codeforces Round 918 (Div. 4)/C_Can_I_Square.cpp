@@ -19,7 +19,7 @@ int main() {
         }
 
         double squareRoot = sqrt(sum);
-     // cout << squareRoot << endl;
+      //cout <<int(squareRoot) << endl;
         // Check if the square root is an integer
         if (squareRoot == int(squareRoot)) {
             cout << "YES" << endl;

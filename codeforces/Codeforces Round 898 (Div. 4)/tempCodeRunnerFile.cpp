@@ -1,0 +1,1 @@
+   // long long int min= arr[0] + 1; // Add 1 to the minimum value;

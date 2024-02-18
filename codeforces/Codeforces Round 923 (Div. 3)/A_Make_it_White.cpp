@@ -12,7 +12,7 @@ int main() {
         cin >> line;
         int lineLength = line.length();
 
-
+  
         int minPos = INT_MAX;
         int maxPos = INT_MIN;
       cout<<"Min"<<minPos<<endl;

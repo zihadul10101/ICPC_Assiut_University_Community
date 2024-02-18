@@ -18,12 +18,10 @@ int main() {
     // Creating the mirror array
     for (int i = 0; i < size; ++i) {
         for (int j = 0; j < num_elements; ++j) {
-            mirror[i][j] = input[i][num_elements - 1 - j];
-            //    mirror[i][j] = input[size - 1 - i][j];
+           mirror[i][j] = input[i][num_elements - 1 - j]; //row change
+               // mirror[i][j] = input[size - 1 - i][j]; // col change
         }
-
     }
-
     // Printing the mirror array
     for (int i = 0; i < size; ++i) {
         for (int j = 0; j < num_elements; ++j) {
