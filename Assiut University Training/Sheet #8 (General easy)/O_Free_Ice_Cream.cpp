@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
   long long int n, x;
-  cin >> n >> x;
+  cin >> n >> x; // 7
   int counter = 0;
   for (int i = 0; i < n; i++)
   {
@@ -12,13 +12,13 @@ int main()
     cin >> op >> num;
     if (op == '+')
     {
-      x += num;
+      x += num; //7 + 5=12
     }
     else
     {
-      if (num <= x)
+      if (num <= x)//10<=12//20 <=2
       {
-        x -= num;
+        x -= num;// 12 -10=2
       }
       else
       {

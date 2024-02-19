@@ -20,10 +20,11 @@ int main() {
         cin >> a >> b >> c;
         
         if (a + b + c >= 2) {
-            flag++;
+           // flag++;
+           totalFlags++;
         }
         
-        totalFlags += flag; // Update the total flags
+       // totalFlags += flag; // Update the total flags
     }
     
     cout << totalFlags << endl; // Output the total number of flags
