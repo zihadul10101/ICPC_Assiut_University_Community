@@ -1,0 +1,1 @@
+   printf("%d is gater than %d",a,b);
